@@ -68,7 +68,8 @@ const mainClass = (() => {
         //Main content here
         bodyInner.appendChild(bodyContent);
         bodyContent.id = "body_content";
-        changeTab(1);
+        //Select first tab on the start of the page
+        changeTab(0);
 
         //Footer
         let footer = document.createElement("footer");
@@ -94,4 +95,4 @@ const mainClass = (() => {
 })();
 
 mainClass.fillPageOnStart();
-menu();
+about();
